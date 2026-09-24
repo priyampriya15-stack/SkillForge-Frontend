@@ -1,7 +1,7 @@
 import { useState } from "react";
 import { useNavigate } from "react-router-dom";
 import { createProject } from "../../Services/clientService";
-import "../../styles/PostProject.css";
+import "../../Styles/PostProject.css";
 
 
 import {

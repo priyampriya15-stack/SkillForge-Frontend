@@ -13,7 +13,7 @@ import {
   getClientPayments,
 } from "../../Services/paymentService";
 
-import "../../styles/Payments.css";
+import "../../Styles/Payments.css";
 
 const Payments = () => {
   // =====================================================

@@ -19,7 +19,7 @@ import {
 
 import { getClientDashboard } from "../../Services/clientService";
 
-import "../../styles/ClientChat.css";
+import "../../Styles/ClientChat.css";
 
 
 // =====================================================

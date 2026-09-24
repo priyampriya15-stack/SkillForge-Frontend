@@ -1,7 +1,7 @@
 import { Outlet } from "react-router-dom";
 
-import FreelancerSidebar from "../Components/freelancer/FreelancerSidebar";
-import FreelancerTopbar from "../Components/freelancer/freelancerTopbar";
+import FreelancerSidebar from "../components/freelancer/FreelancerSidebar";
+import FreelancerTopbar from "../components/freelancer/freelancerTopbar";
 
 import "../Styles/freelancer.css";
 
