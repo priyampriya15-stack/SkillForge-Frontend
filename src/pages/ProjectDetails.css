@@ -1,0 +1,1362 @@
+/* =========================================================
+   SKILLFORGE
+   PROJECT DETAILS PAGE
+   White + Indigo Professional UI
+========================================================= */
+
+.project-details-page {
+  min-height: 100vh;
+  background: #f7f8fc;
+  color: #101828;
+}
+
+
+/* =========================================================
+   COMMON CONTAINER
+========================================================= */
+
+.pd-container {
+  width: min(1180px, calc(100% - 40px));
+  margin: 0 auto;
+}
+
+
+/* =========================================================
+   HEADER
+========================================================= */
+
+.pd-header {
+  background: #ffffff;
+  border-bottom: 1px solid #eaecf0;
+  position: relative;
+  overflow: hidden;
+}
+
+.pd-header::after {
+  content: "";
+  position: absolute;
+  width: 320px;
+  height: 320px;
+  right: -120px;
+  top: -190px;
+  border-radius: 50%;
+  background: rgba(79, 70, 229, 0.06);
+  pointer-events: none;
+}
+
+
+/* =========================================================
+   BACK BUTTON
+========================================================= */
+
+.pd-back-btn {
+  display: inline-flex;
+  align-items: center;
+  gap: 7px;
+
+  margin-top: 25px;
+  padding: 8px 12px;
+
+  border: 1px solid #e4e7ec;
+  border-radius: 8px;
+
+  background: #ffffff;
+  color: #667085;
+
+  font-size: 11px;
+  font-weight: 700;
+
+  cursor: pointer;
+
+  transition:
+    color 0.2s ease,
+    border-color 0.2s ease,
+    background 0.2s ease,
+    transform 0.2s ease;
+}
+
+.pd-back-btn:hover {
+  color: #4f46e5;
+  border-color: #c7d2fe;
+  background: #f5f3ff;
+  transform: translateX(-2px);
+}
+
+
+/* =========================================================
+   HEADER MAIN
+========================================================= */
+
+.pd-header-main {
+  position: relative;
+  z-index: 1;
+
+  display: flex;
+  align-items: flex-start;
+  justify-content: space-between;
+  gap: 30px;
+
+  padding: 25px 0 38px;
+}
+
+
+/* =========================================================
+   TITLE
+========================================================= */
+
+.pd-title-area {
+  max-width: 770px;
+}
+
+.pd-label {
+  display: inline-flex;
+  align-items: center;
+  gap: 7px;
+
+  padding: 6px 10px;
+
+  border-radius: 999px;
+  border: 1px solid #e0e7ff;
+
+  background: #eef2ff;
+  color: #4f46e5;
+
+  font-size: 9px;
+  font-weight: 800;
+
+  letter-spacing: 0.1em;
+}
+
+.pd-title-area h1 {
+  margin: 14px 0 0;
+
+  color: #101828;
+
+  font-size: clamp(28px, 4vw, 40px);
+  line-height: 1.15;
+
+  font-weight: 800;
+  letter-spacing: -0.04em;
+}
+
+.pd-title-area > p {
+  max-width: 700px;
+
+  margin: 12px 0 0;
+
+  color: #667085;
+
+  font-size: 13px;
+  line-height: 1.8;
+}
+
+
+/* =========================================================
+   HEADER ACTIONS
+========================================================= */
+
+.pd-header-actions {
+  display: flex;
+  align-items: center;
+  gap: 8px;
+
+  flex-shrink: 0;
+
+  padding-top: 26px;
+}
+
+.pd-edit-btn,
+.pd-delete-btn {
+  display: inline-flex;
+  align-items: center;
+  justify-content: center;
+  gap: 7px;
+
+  height: 38px;
+  padding: 0 13px;
+
+  border-radius: 8px;
+
+  font-size: 11px;
+  font-weight: 750;
+
+  cursor: pointer;
+
+  transition:
+    transform 0.2s ease,
+    background 0.2s ease,
+    border-color 0.2s ease;
+}
+
+.pd-edit-btn {
+  border: 1px solid #c7d2fe;
+  background: #eef2ff;
+  color: #4f46e5;
+}
+
+.pd-edit-btn:hover {
+  background: #e0e7ff;
+  transform: translateY(-1px);
+}
+
+.pd-delete-btn {
+  border: 1px solid #fecaca;
+  background: #fff5f5;
+  color: #dc2626;
+}
+
+.pd-delete-btn:hover:not(:disabled) {
+  background: #fee2e2;
+  transform: translateY(-1px);
+}
+
+.pd-delete-btn:disabled {
+  opacity: 0.65;
+  cursor: not-allowed;
+}
+
+
+/* =========================================================
+   MAIN LAYOUT
+========================================================= */
+
+.pd-main-layout {
+  display: grid;
+
+  grid-template-columns:
+    minmax(0, 1fr)
+    315px;
+
+  align-items: start;
+
+  gap: 24px;
+
+  padding-top: 30px;
+  padding-bottom: 60px;
+}
+
+
+/* =========================================================
+   MAIN CONTENT
+========================================================= */
+
+.pd-main-content {
+  display: flex;
+  flex-direction: column;
+  gap: 20px;
+}
+
+
+/* =========================================================
+   CARD
+========================================================= */
+
+.pd-card {
+  background: #ffffff;
+
+  border: 1px solid #e4e7ec;
+  border-radius: 15px;
+
+  box-shadow:
+    0 3px 12px rgba(16, 24, 40, 0.035);
+
+  overflow: hidden;
+
+  transition:
+    border-color 0.2s ease,
+    box-shadow 0.2s ease;
+}
+
+.pd-card:hover {
+  border-color: #d9def7;
+
+  box-shadow:
+    0 8px 24px rgba(16, 24, 40, 0.055);
+}
+
+
+/* =========================================================
+   CARD HEADER
+========================================================= */
+
+.pd-card-header {
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  gap: 20px;
+
+  padding: 20px 22px;
+
+  border-bottom: 1px solid #f0f2f5;
+}
+
+.pd-kicker {
+  display: block;
+
+  margin-bottom: 5px;
+
+  color: #98a2b3;
+
+  font-size: 9px;
+  font-weight: 800;
+
+  letter-spacing: 0.12em;
+}
+
+.pd-card-header h2 {
+  margin: 0;
+
+  color: #101828;
+
+  font-size: 17px;
+  font-weight: 800;
+
+  letter-spacing: -0.02em;
+}
+
+
+/* =========================================================
+   CARD ICON
+========================================================= */
+
+.pd-card-icon {
+  width: 38px;
+  height: 38px;
+
+  display: grid;
+  place-items: center;
+
+  flex-shrink: 0;
+
+  border-radius: 10px;
+}
+
+.pd-card-icon.purple {
+  background: #eef2ff;
+  color: #4f46e5;
+}
+
+.pd-card-icon.blue {
+  background: #eff8ff;
+  color: #1570ef;
+}
+
+.pd-card-icon.green {
+  background: #ecfdf3;
+  color: #039855;
+}
+
+.pd-card-icon.orange {
+  background: #fff7ed;
+  color: #ea580c;
+}
+
+
+/* =========================================================
+   DESCRIPTION
+========================================================= */
+
+.pd-description {
+  padding: 22px;
+}
+
+.pd-description p {
+  margin: 0;
+
+  color: #475467;
+
+  font-size: 13px;
+  line-height: 1.9;
+
+  white-space: pre-line;
+}
+
+
+/* =========================================================
+   INFORMATION GRID
+========================================================= */
+
+.pd-info-grid {
+  display: grid;
+
+  grid-template-columns:
+    repeat(2, minmax(0, 1fr));
+
+  gap: 12px;
+
+  padding: 20px 22px 22px;
+}
+
+
+/* =========================================================
+   INFO BOX
+========================================================= */
+
+.pd-info-box {
+  display: flex;
+  align-items: center;
+  gap: 12px;
+
+  min-height: 82px;
+
+  padding: 15px;
+
+  border: 1px solid #eaecf0;
+  border-radius: 12px;
+
+  background: #fafbfc;
+
+  transition:
+    transform 0.2s ease,
+    border-color 0.2s ease,
+    background 0.2s ease;
+}
+
+.pd-info-box:hover {
+  transform: translateY(-2px);
+  border-color: #c7d2fe;
+  background: #ffffff;
+}
+
+
+/* =========================================================
+   INFO ICON
+========================================================= */
+
+.pd-info-icon {
+  width: 39px;
+  height: 39px;
+
+  display: grid;
+  place-items: center;
+
+  flex-shrink: 0;
+
+  border-radius: 10px;
+}
+
+.pd-info-box.budget .pd-info-icon {
+  background: #eef2ff;
+  color: #4f46e5;
+}
+
+.pd-info-box.deadline .pd-info-icon {
+  background: #eff8ff;
+  color: #1570ef;
+}
+
+.pd-info-box.category .pd-info-icon {
+  background: #ecfdf3;
+  color: #039855;
+}
+
+.pd-info-box.status .pd-info-icon {
+  background: #fff7ed;
+  color: #ea580c;
+}
+
+
+/* =========================================================
+   INFO TEXT
+========================================================= */
+
+.pd-info-box span {
+  display: block;
+
+  margin-bottom: 5px;
+
+  color: #98a2b3;
+
+  font-size: 9px;
+  font-weight: 800;
+
+  text-transform: uppercase;
+  letter-spacing: 0.08em;
+}
+
+.pd-info-box strong {
+  display: block;
+
+  color: #344054;
+
+  font-size: 13px;
+  font-weight: 800;
+
+  word-break: break-word;
+}
+
+
+/* =========================================================
+   SKILLS
+========================================================= */
+
+.pd-skills {
+  display: flex;
+  flex-wrap: wrap;
+  gap: 8px;
+
+  padding: 20px 22px 22px;
+}
+
+.pd-skill {
+  display: inline-flex;
+  align-items: center;
+
+  padding: 8px 12px;
+
+  border: 1px solid #c7d2fe;
+  border-radius: 999px;
+
+  background: #eef2ff;
+  color: #4338ca;
+
+  font-size: 10px;
+  font-weight: 750;
+
+  transition:
+    background 0.2s ease,
+    transform 0.2s ease;
+}
+
+.pd-skill:hover {
+  background: #e0e7ff;
+  transform: translateY(-1px);
+}
+
+
+/* =========================================================
+   APPLICATIONS
+========================================================= */
+
+.pd-applications {
+  padding: 7px 22px 15px;
+}
+
+.pd-application {
+  display: flex;
+  align-items: center;
+  gap: 12px;
+
+  padding: 14px 0;
+
+  border-bottom: 1px solid #f0f2f5;
+}
+
+.pd-application:last-child {
+  border-bottom: none;
+}
+
+
+/* =========================================================
+   AVATAR
+========================================================= */
+
+.pd-avatar {
+  width: 42px;
+  height: 42px;
+
+  display: grid;
+  place-items: center;
+
+  flex-shrink: 0;
+
+  overflow: hidden;
+
+  border-radius: 12px;
+
+  background:
+    linear-gradient(
+      135deg,
+      #eef2ff,
+      #e0e7ff
+    );
+
+  color: #4f46e5;
+}
+
+.pd-avatar img {
+  width: 100%;
+  height: 100%;
+
+  object-fit: cover;
+}
+
+
+/* =========================================================
+   APPLICATION INFO
+========================================================= */
+
+.pd-application-info {
+  display: flex;
+  flex-direction: column;
+
+  flex: 1;
+
+  min-width: 0;
+}
+
+.pd-application-info strong {
+  overflow: hidden;
+
+  color: #344054;
+
+  font-size: 12px;
+  font-weight: 800;
+
+  white-space: nowrap;
+  text-overflow: ellipsis;
+}
+
+.pd-application-info span {
+  margin-top: 4px;
+
+  color: #98a2b3;
+
+  font-size: 10px;
+
+  text-transform: capitalize;
+}
+
+
+/* =========================================================
+   CHAT BUTTON
+========================================================= */
+
+.pd-chat-btn {
+  display: inline-flex;
+  align-items: center;
+  justify-content: center;
+  gap: 6px;
+
+  height: 34px;
+
+  padding: 0 11px;
+
+  border: 1px solid #c7d2fe;
+  border-radius: 8px;
+
+  background: #eef2ff;
+  color: #4f46e5;
+
+  font-size: 10px;
+  font-weight: 750;
+
+  cursor: pointer;
+
+  transition:
+    background 0.2s ease,
+    transform 0.2s ease;
+}
+
+.pd-chat-btn:hover:not(:disabled) {
+  background: #e0e7ff;
+  transform: translateY(-1px);
+}
+
+.pd-chat-btn:disabled {
+  opacity: 0.45;
+  cursor: not-allowed;
+}
+
+.pd-application-arrow {
+  flex-shrink: 0;
+
+  color: #98a2b3;
+}
+
+
+/* =========================================================
+   NO APPLICATIONS
+========================================================= */
+
+.pd-no-applications {
+  padding: 38px 20px 42px;
+
+  text-align: center;
+}
+
+.pd-no-app-icon {
+  width: 52px;
+  height: 52px;
+
+  display: grid;
+  place-items: center;
+
+  margin: 0 auto;
+
+  border-radius: 14px;
+
+  background: #f2f4f7;
+
+  color: #98a2b3;
+}
+
+.pd-no-applications h3 {
+  margin: 13px 0 0;
+
+  color: #344054;
+
+  font-size: 14px;
+  font-weight: 800;
+}
+
+.pd-no-applications p {
+  max-width: 360px;
+
+  margin: 6px auto 0;
+
+  color: #98a2b3;
+
+  font-size: 11px;
+  line-height: 1.7;
+}
+
+
+/* =========================================================
+   SIDEBAR
+========================================================= */
+
+.pd-sidebar {
+  display: flex;
+  flex-direction: column;
+  gap: 16px;
+
+  position: sticky;
+  top: 20px;
+}
+
+
+/* =========================================================
+   SIDEBAR CARD
+========================================================= */
+
+.pd-sidebar-card {
+  padding: 18px;
+
+  background: #ffffff;
+
+  border: 1px solid #e4e7ec;
+  border-radius: 14px;
+
+  box-shadow:
+    0 3px 12px rgba(16, 24, 40, 0.035);
+}
+
+
+/* =========================================================
+   SIDEBAR HEADING
+========================================================= */
+
+.pd-sidebar-heading {
+  display: flex;
+  align-items: center;
+  gap: 11px;
+
+  margin-bottom: 16px;
+}
+
+.pd-sidebar-icon {
+  width: 37px;
+  height: 37px;
+
+  display: grid;
+  place-items: center;
+
+  flex-shrink: 0;
+
+  border-radius: 10px;
+}
+
+.pd-sidebar-icon.purple {
+  background: #eef2ff;
+  color: #4f46e5;
+}
+
+.pd-sidebar-icon.blue {
+  background: #eff8ff;
+  color: #1570ef;
+}
+
+.pd-sidebar-heading > div:last-child {
+  min-width: 0;
+}
+
+.pd-sidebar-heading strong {
+  display: block;
+
+  color: #344054;
+
+  font-size: 12px;
+  font-weight: 800;
+}
+
+.pd-sidebar-heading span {
+  display: block;
+
+  margin-top: 3px;
+
+  color: #98a2b3;
+
+  font-size: 9px;
+}
+
+
+/* =========================================================
+   STATUS BADGE
+========================================================= */
+
+.pd-status-badge {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  gap: 7px;
+
+  width: 100%;
+
+  padding: 11px;
+
+  border-radius: 9px;
+
+  font-size: 11px;
+  font-weight: 800;
+
+  text-transform: capitalize;
+}
+
+.pd-status-badge.open {
+  background: #ecfdf3;
+  color: #039855;
+}
+
+.pd-status-badge.closed {
+  background: #f2f4f7;
+  color: #667085;
+}
+
+
+/* =========================================================
+   QUICK ACTION
+========================================================= */
+
+.pd-quick-action {
+  display: flex;
+  align-items: center;
+  gap: 10px;
+
+  width: 100%;
+
+  padding: 11px 8px;
+
+  border: none;
+  border-bottom: 1px solid #f0f2f5;
+
+  background: transparent;
+
+  text-align: left;
+
+  cursor: pointer;
+
+  transition:
+    background 0.2s ease,
+    transform 0.2s ease;
+}
+
+.pd-quick-action:last-child {
+  border-bottom: none;
+}
+
+.pd-quick-action:hover {
+  background: #f8fafc;
+  transform: translateX(2px);
+}
+
+
+/* =========================================================
+   QUICK ICON
+========================================================= */
+
+.pd-quick-icon {
+  width: 34px;
+  height: 34px;
+
+  display: grid;
+  place-items: center;
+
+  flex-shrink: 0;
+
+  border-radius: 9px;
+}
+
+.pd-quick-icon.blue {
+  background: #eff8ff;
+  color: #1570ef;
+}
+
+.pd-quick-icon.orange {
+  background: #fff7ed;
+  color: #ea580c;
+}
+
+.pd-quick-icon.green {
+  background: #ecfdf3;
+  color: #039855;
+}
+
+
+/* =========================================================
+   QUICK CONTENT
+========================================================= */
+
+.pd-quick-content {
+  flex: 1;
+
+  min-width: 0;
+}
+
+.pd-quick-content strong {
+  display: block;
+
+  color: #344054;
+
+  font-size: 11px;
+  font-weight: 800;
+}
+
+.pd-quick-content span {
+  display: block;
+
+  margin-top: 3px;
+
+  overflow: hidden;
+
+  color: #98a2b3;
+
+  font-size: 9px;
+
+  white-space: nowrap;
+  text-overflow: ellipsis;
+}
+
+.pd-quick-action > svg {
+  flex-shrink: 0;
+
+  color: #98a2b3;
+}
+
+
+/* =========================================================
+   APPLICATION COUNT
+========================================================= */
+
+.pd-count-card {
+  display: flex;
+  align-items: center;
+  gap: 13px;
+
+  background:
+    linear-gradient(
+      135deg,
+      #f5f3ff,
+      #eef2ff
+    );
+
+  border-color: #ddd6fe;
+}
+
+.pd-count-icon {
+  width: 43px;
+  height: 43px;
+
+  display: grid;
+  place-items: center;
+
+  border-radius: 11px;
+
+  background: #ffffff;
+
+  color: #4f46e5;
+
+  box-shadow:
+    0 3px 8px rgba(79, 70, 229, 0.1);
+}
+
+.pd-count-card > div:last-child {
+  display: flex;
+  flex-direction: column;
+}
+
+.pd-count-card span {
+  color: #667085;
+
+  font-size: 9px;
+  font-weight: 700;
+
+  text-transform: uppercase;
+  letter-spacing: 0.07em;
+}
+
+.pd-count-card strong {
+  margin-top: 2px;
+
+  color: #312e81;
+
+  font-size: 24px;
+  line-height: 1;
+
+  font-weight: 850;
+}
+
+
+/* =========================================================
+   LOADING
+========================================================= */
+
+.pd-loading-page {
+  min-height: 75vh;
+
+  display: grid;
+  place-items: center;
+
+  background:
+    radial-gradient(
+      circle at 50% 0%,
+      #eef2ff,
+      #ffffff 48%
+    );
+}
+
+.pd-loading-card {
+  width: min(400px, calc(100% - 40px));
+
+  padding: 35px;
+
+  text-align: center;
+
+  background: #ffffff;
+
+  border: 1px solid #e4e7ec;
+  border-radius: 16px;
+
+  box-shadow:
+    0 12px 35px rgba(16, 24, 40, 0.07);
+}
+
+.pd-loading-icon {
+  width: 54px;
+  height: 54px;
+
+  display: grid;
+  place-items: center;
+
+  margin: 0 auto;
+
+  border-radius: 14px;
+
+  background: #eef2ff;
+  color: #4f46e5;
+}
+
+.pd-loading-card h2 {
+  margin: 15px 0 0;
+
+  color: #101828;
+
+  font-size: 17px;
+}
+
+.pd-loading-card p {
+  margin: 6px 0 0;
+
+  color: #98a2b3;
+
+  font-size: 11px;
+}
+
+
+/* =========================================================
+   ERROR PAGE
+========================================================= */
+
+.pd-empty-page {
+  min-height: 75vh;
+
+  display: grid;
+  place-items: center;
+
+  padding: 30px;
+
+  background: #f8fafc;
+}
+
+.pd-empty-card {
+  width: min(500px, 100%);
+
+  padding: 40px 30px;
+
+  text-align: center;
+
+  background: #ffffff;
+
+  border: 1px solid #e4e7ec;
+  border-radius: 16px;
+
+  box-shadow:
+    0 12px 35px rgba(16, 24, 40, 0.07);
+}
+
+.pd-error-icon {
+  width: 60px;
+  height: 60px;
+
+  display: grid;
+  place-items: center;
+
+  margin: 0 auto;
+
+  border-radius: 15px;
+
+  background: #fff5f5;
+
+  color: #dc2626;
+}
+
+.pd-empty-card h2 {
+  margin: 17px 0 0;
+
+  color: #344054;
+
+  font-size: 18px;
+}
+
+.pd-empty-card > p {
+  margin: 7px 0 0;
+
+  color: #98a2b3;
+
+  font-size: 11px;
+}
+
+.pd-empty-actions {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  flex-wrap: wrap;
+  gap: 9px;
+
+  margin-top: 22px;
+}
+
+.pd-retry-btn,
+.pd-back-empty-btn {
+  display: inline-flex;
+  align-items: center;
+  justify-content: center;
+  gap: 7px;
+
+  height: 38px;
+
+  padding: 0 14px;
+
+  border-radius: 8px;
+
+  font-size: 10px;
+  font-weight: 750;
+
+  cursor: pointer;
+}
+
+.pd-retry-btn {
+  border: none;
+
+  background: #4f46e5;
+  color: #ffffff;
+}
+
+.pd-retry-btn:hover {
+  background: #4338ca;
+}
+
+.pd-back-empty-btn {
+  border: 1px solid #e4e7ec;
+
+  background: #ffffff;
+  color: #475467;
+}
+
+.pd-back-empty-btn:hover {
+  background: #f8fafc;
+}
+
+
+/* =========================================================
+   SPINNER
+========================================================= */
+
+.pd-spinner {
+  animation: pdSpin 0.9s linear infinite;
+}
+
+@keyframes pdSpin {
+  from {
+    transform: rotate(0deg);
+  }
+
+  to {
+    transform: rotate(360deg);
+  }
+}
+
+
+/* =========================================================
+   TABLET
+========================================================= */
+
+@media (max-width: 950px) {
+
+  .pd-main-layout {
+    grid-template-columns: 1fr;
+  }
+
+  .pd-sidebar {
+    position: static;
+
+    display: grid;
+
+    grid-template-columns:
+      repeat(2, minmax(0, 1fr));
+
+    align-items: start;
+  }
+
+  .pd-count-card {
+    grid-column: span 2;
+  }
+
+}
+
+
+/* =========================================================
+   SMALL TABLET
+========================================================= */
+
+@media (max-width: 720px) {
+
+  .pd-container {
+    width: calc(100% - 30px);
+  }
+
+  .pd-header-main {
+    flex-direction: column;
+
+    padding-bottom: 30px;
+  }
+
+  .pd-header-actions {
+    width: 100%;
+
+    padding-top: 0;
+  }
+
+  .pd-edit-btn,
+  .pd-delete-btn {
+    flex: 1;
+  }
+
+  .pd-info-grid {
+    grid-template-columns: 1fr;
+  }
+
+  .pd-sidebar {
+    grid-template-columns: 1fr;
+  }
+
+  .pd-count-card {
+    grid-column: auto;
+  }
+
+}
+
+
+/* =========================================================
+   MOBILE
+========================================================= */
+
+@media (max-width: 520px) {
+
+  .pd-container {
+    width: calc(100% - 24px);
+  }
+
+  .pd-back-btn {
+    margin-top: 18px;
+  }
+
+  .pd-header-main {
+    padding-top: 20px;
+  }
+
+  .pd-title-area h1 {
+    font-size: 28px;
+  }
+
+  .pd-title-area > p {
+    font-size: 11px;
+  }
+
+  .pd-header-actions {
+    flex-direction: column;
+  }
+
+  .pd-edit-btn,
+  .pd-delete-btn {
+    width: 100%;
+  }
+
+  .pd-main-layout {
+    padding-top: 20px;
+    padding-bottom: 40px;
+
+    gap: 15px;
+  }
+
+  .pd-card-header {
+    padding: 17px;
+  }
+
+  .pd-description {
+    padding: 17px;
+  }
+
+  .pd-info-grid {
+    padding: 15px 17px 17px;
+  }
+
+  .pd-skills {
+    padding: 15px 17px 17px;
+  }
+
+  .pd-applications {
+    padding: 5px 17px 12px;
+  }
+
+  .pd-application {
+    flex-wrap: wrap;
+  }
+
+  .pd-application-info {
+    min-width: calc(100% - 60px);
+  }
+
+  .pd-chat-btn {
+    margin-left: 54px;
+  }
+
+  .pd-application-arrow {
+    display: none;
+  }
+
+  .pd-sidebar-card {
+    padding: 16px;
+  }
+
+}

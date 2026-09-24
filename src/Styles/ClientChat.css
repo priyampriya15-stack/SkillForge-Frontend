@@ -1,0 +1,690 @@
+/* =========================================================
+   SKILLFORGE CLIENT CHAT DASHBOARD
+   Professional SaaS Chat UI
+   ========================================================= */
+
+
+/* =========================================================
+   MESSAGES PANEL
+   ========================================================= */
+
+.client-messages-panel {
+    width: 100%;
+    margin-top: 24px;
+    overflow: hidden;
+    background: #ffffff;
+    border: 1px solid #e7e8f0;
+    border-radius: 18px;
+    box-shadow: 0 8px 30px rgba(31, 35, 55, 0.06);
+    transition:
+        box-shadow 0.2s ease,
+        transform 0.2s ease;
+}
+
+
+/* =========================================================
+   HEADER ICON
+   ========================================================= */
+
+.client-chat-header-icon {
+    width: 42px;
+    height: 42px;
+    flex-shrink: 0;
+
+    display: flex;
+    align-items: center;
+    justify-content: center;
+
+    border-radius: 12px;
+    background: #f1edff;
+    color: #6d3df5;
+}
+
+.client-chat-header-icon svg {
+    width: 22px;
+    height: 22px;
+}
+
+
+/* =========================================================
+   CHAT CONTENT
+   ========================================================= */
+
+.client-message-content {
+    width: calc(100% - 40px);
+
+    display: flex;
+    align-items: center;
+    gap: 20px;
+
+    margin: 0 20px 18px;
+    padding: 24px;
+
+    border-radius: 16px;
+
+    background: linear-gradient(
+        135deg,
+        #faf9ff 0%,
+        #f3f6ff 100%
+    );
+
+    border: 1px solid #e7e2ff;
+}
+
+
+/* =========================================================
+   BIG CHAT ICON
+   ========================================================= */
+
+.client-message-icon {
+    width: 62px;
+    height: 62px;
+    min-width: 62px;
+    flex-shrink: 0;
+
+    display: flex;
+    align-items: center;
+    justify-content: center;
+
+    border-radius: 17px;
+
+    background: linear-gradient(
+        135deg,
+        #7c3aed,
+        #5b21b6
+    );
+
+    color: #ffffff;
+
+    box-shadow:
+        0 10px 25px rgba(109, 61, 245, 0.25);
+}
+
+.client-message-icon svg {
+    width: 27px;
+    height: 27px;
+    color: #ffffff;
+    stroke: #ffffff;
+}
+
+
+/* =========================================================
+   CHAT TEXT
+   ========================================================= */
+
+.client-message-text {
+    min-width: 0;
+    flex: 1;
+}
+
+.client-message-text h3 {
+    margin: 0 0 7px;
+
+    color: #111827;
+    font-size: 17px;
+    font-weight: 750;
+    line-height: 1.3;
+    letter-spacing: -0.2px;
+}
+
+.client-message-text p {
+    margin: 0;
+    max-width: 650px;
+
+    color: #667085;
+    font-size: 13px;
+    line-height: 1.65;
+}
+
+
+/* =========================================================
+   CHAT BUTTON AREA
+   ========================================================= */
+
+.client-message-actions {
+    display: flex;
+    align-items: center;
+    gap: 10px;
+    flex-shrink: 0;
+}
+
+
+/* =========================================================
+   MAIN CHAT BUTTON
+   ========================================================= */
+
+.client-message-btn {
+    min-height: 42px;
+
+    display: inline-flex;
+    align-items: center;
+    justify-content: center;
+    gap: 8px;
+
+    padding: 0 16px;
+
+    border: 1px solid transparent;
+    border-radius: 10px;
+
+    background: linear-gradient(
+        135deg,
+        #7c3aed,
+        #5b21b6
+    );
+
+    color: #ffffff;
+
+    font-size: 13px;
+    font-weight: 700;
+    line-height: 1;
+
+    text-decoration: none;
+    cursor: pointer;
+    white-space: nowrap;
+
+    transition:
+        transform 0.2s ease,
+        box-shadow 0.2s ease,
+        background 0.2s ease,
+        opacity 0.2s ease;
+}
+
+.client-message-btn svg {
+    width: 16px;
+    height: 16px;
+    flex-shrink: 0;
+}
+
+.client-message-btn:hover {
+    transform: translateY(-2px);
+
+    box-shadow:
+        0 10px 24px rgba(109, 61, 245, 0.25);
+}
+
+.client-message-btn:active {
+    transform: translateY(0);
+}
+
+.client-message-btn:focus-visible {
+    outline: 3px solid rgba(109, 61, 245, 0.20);
+    outline-offset: 2px;
+}
+
+
+/* =========================================================
+   DISABLED CHAT BUTTON
+   ========================================================= */
+
+.client-message-btn:disabled {
+    opacity: 0.55;
+    cursor: not-allowed;
+    transform: none;
+    box-shadow: none;
+}
+
+
+/* =========================================================
+   SECONDARY BUTTON
+   ========================================================= */
+
+.client-message-btn.secondary {
+    background: #ffffff;
+    color: #5b21b6;
+    border-color: #ddd6fe;
+    box-shadow: none;
+}
+
+.client-message-btn.secondary:hover {
+    background: #f7f5ff;
+    border-color: #c4b5fd;
+
+    box-shadow:
+        0 6px 18px rgba(109, 61, 245, 0.08);
+}
+
+
+/* =========================================================
+   CHAT STATUS
+   ========================================================= */
+
+.client-chat-status {
+    display: flex;
+    align-items: center;
+    gap: 9px;
+
+    margin: 0 20px 20px;
+    padding: 10px 14px;
+
+    border-radius: 10px;
+
+    background: #f8fafc;
+    border: 1px solid #eef0f5;
+
+    color: #64748b;
+
+    font-size: 12px;
+    font-weight: 500;
+    line-height: 1.4;
+}
+
+
+/* =========================================================
+   STATUS DOT
+   ========================================================= */
+
+.client-chat-status-dot {
+    width: 8px;
+    height: 8px;
+    flex-shrink: 0;
+
+    border-radius: 50%;
+    background: #22c55e;
+
+    box-shadow:
+        0 0 0 4px rgba(34, 197, 94, 0.10);
+}
+
+
+/* =========================================================
+   PROJECT CHAT BUTTON AREA
+   ========================================================= */
+
+.client-project-actions {
+    display: flex;
+    align-items: center;
+    justify-content: flex-end;
+
+    gap: 9px;
+    flex-wrap: wrap;
+}
+
+
+/* =========================================================
+   PROJECT CHAT BUTTON
+   ========================================================= */
+
+.client-chat-btn {
+    min-height: 34px;
+
+    display: inline-flex;
+    align-items: center;
+    justify-content: center;
+    gap: 6px;
+
+    padding: 0 12px;
+
+    border: 1px solid transparent;
+    border-radius: 9px;
+
+    background: linear-gradient(
+        135deg,
+        #7c3aed,
+        #5b21b6
+    );
+
+    color: #ffffff;
+
+    font-size: 12px;
+    font-weight: 700;
+    line-height: 1;
+
+    text-decoration: none;
+    cursor: pointer;
+    white-space: nowrap;
+
+    transition:
+        transform 0.2s ease,
+        box-shadow 0.2s ease,
+        background 0.2s ease;
+}
+
+.client-chat-btn svg {
+    width: 14px;
+    height: 14px;
+    flex-shrink: 0;
+}
+
+.client-chat-btn:hover {
+    transform: translateY(-1px);
+
+    box-shadow:
+        0 7px 16px rgba(109, 61, 245, 0.22);
+}
+
+.client-chat-btn:active {
+    transform: translateY(0);
+}
+
+.client-chat-btn:focus-visible {
+    outline: 3px solid rgba(109, 61, 245, 0.18);
+    outline-offset: 2px;
+}
+
+
+/* =========================================================
+   PROJECT CHAT SECONDARY
+   ========================================================= */
+
+.client-chat-btn.secondary {
+    background: #f5f3ff;
+    color: #5b21b6;
+    border-color: #ddd6fe;
+    box-shadow: none;
+}
+
+.client-chat-btn.secondary:hover {
+    background: #ede9fe;
+    border-color: #c4b5fd;
+    box-shadow: none;
+}
+
+
+/* =========================================================
+   ASSIGNED FREELANCER
+   ========================================================= */
+
+.client-assigned-user {
+    display: inline-flex;
+    align-items: center;
+    gap: 5px;
+
+    margin-top: 6px;
+
+    color: #64748b;
+
+    font-size: 12px;
+    font-weight: 600;
+    line-height: 1.4;
+}
+
+.client-assigned-user svg {
+    width: 14px;
+    height: 14px;
+    flex-shrink: 0;
+    color: #7c3aed;
+}
+
+
+/* =========================================================
+   CHAT ERROR
+   ========================================================= */
+
+.client-chat-error {
+    width: calc(100% - 40px);
+
+    margin: 0 20px 18px;
+    padding: 11px 14px;
+
+    display: flex;
+    align-items: flex-start;
+    gap: 9px;
+
+    border-radius: 10px;
+
+    background: #fef2f2;
+    border: 1px solid #fecaca;
+
+    color: #b91c1c;
+
+    font-size: 12px;
+    line-height: 1.5;
+}
+
+.client-chat-error svg {
+    width: 16px;
+    height: 16px;
+    flex-shrink: 0;
+    margin-top: 1px;
+}
+
+
+/* =========================================================
+   TABLET
+   ========================================================= */
+
+@media (max-width: 1000px) {
+    .client-message-content {
+        align-items: flex-start;
+        flex-wrap: wrap;
+    }
+
+    .client-message-text {
+        min-width: 240px;
+    }
+
+    .client-message-actions {
+        width: 100%;
+        margin-top: 4px;
+        justify-content: flex-start;
+    }
+}
+
+
+/* =========================================================
+   TABLET / SMALL LAPTOP
+   ========================================================= */
+
+@media (max-width: 800px) {
+    .client-message-content {
+        gap: 15px;
+        padding: 20px;
+    }
+
+    .client-message-icon {
+        width: 56px;
+        height: 56px;
+        min-width: 56px;
+        border-radius: 15px;
+    }
+
+    .client-message-icon svg {
+        width: 24px;
+        height: 24px;
+    }
+
+    .client-message-text h3 {
+        font-size: 16px;
+    }
+
+    .client-message-text p {
+        font-size: 12.5px;
+    }
+}
+
+
+/* =========================================================
+   MOBILE
+   ========================================================= */
+
+@media (max-width: 650px) {
+    .client-messages-panel {
+        margin-top: 18px;
+        border-radius: 15px;
+    }
+
+    .client-message-content {
+        width: calc(100% - 24px);
+
+        flex-direction: column;
+        align-items: flex-start;
+        gap: 14px;
+
+        margin: 0 12px 14px;
+        padding: 18px;
+
+        border-radius: 14px;
+    }
+
+    .client-message-icon {
+        width: 54px;
+        height: 54px;
+        min-width: 54px;
+        border-radius: 15px;
+    }
+
+    .client-message-text {
+        width: 100%;
+    }
+
+    .client-message-text h3 {
+        font-size: 16px;
+        margin-bottom: 6px;
+    }
+
+    .client-message-text p {
+        max-width: none;
+        font-size: 12.5px;
+        line-height: 1.6;
+    }
+
+    .client-message-actions {
+        width: 100%;
+
+        flex-direction: column;
+        align-items: stretch;
+
+        gap: 8px;
+        margin-top: 2px;
+    }
+
+    .client-message-btn {
+        width: 100%;
+        min-height: 44px;
+    }
+
+    .client-chat-status {
+        margin: 0 12px 14px;
+        padding: 10px 12px;
+        font-size: 11px;
+    }
+
+    .client-project-actions {
+        width: 100%;
+        justify-content: flex-start;
+        gap: 7px;
+    }
+
+    .client-chat-btn {
+        width: 100%;
+        min-height: 38px;
+    }
+
+    .client-chat-error {
+        width: calc(100% - 24px);
+        margin: 0 12px 14px;
+        font-size: 11px;
+    }
+}
+
+
+/* =========================================================
+   SMALL MOBILE
+   ========================================================= */
+
+@media (max-width: 480px) {
+    .client-messages-panel {
+        border-radius: 13px;
+    }
+
+    .client-message-content {
+        width: calc(100% - 18px);
+        margin: 0 9px 12px;
+        padding: 15px;
+    }
+
+    .client-message-icon {
+        width: 48px;
+        height: 48px;
+        min-width: 48px;
+        border-radius: 13px;
+    }
+
+    .client-message-icon svg {
+        width: 21px;
+        height: 21px;
+    }
+
+    .client-message-text h3 {
+        font-size: 15px;
+    }
+
+    .client-message-text p {
+        font-size: 12px;
+        line-height: 1.55;
+    }
+
+    .client-message-btn {
+        min-height: 42px;
+        font-size: 12px;
+    }
+
+    .client-chat-status {
+        margin: 0 9px 12px;
+        font-size: 10.5px;
+    }
+
+    .client-project-actions {
+        flex-direction: column;
+        align-items: stretch;
+    }
+
+    .client-chat-btn {
+        width: 100%;
+    }
+
+    .client-chat-error {
+        width: calc(100% - 18px);
+        margin: 0 9px 12px;
+    }
+}
+
+
+/* =========================================================
+   VERY SMALL MOBILE
+   ========================================================= */
+
+@media (max-width: 360px) {
+    .client-message-content {
+        padding: 13px;
+    }
+
+    .client-message-text h3 {
+        font-size: 14px;
+    }
+
+    .client-message-text p {
+        font-size: 11.5px;
+    }
+
+    .client-message-btn,
+    .client-chat-btn {
+        font-size: 11px;
+    }
+}
+
+
+/* =========================================================
+   TOUCH DEVICES
+   ========================================================= */
+
+@media (hover: none) {
+    .client-message-btn:hover,
+    .client-chat-btn:hover {
+        transform: none;
+        box-shadow: none;
+    }
+}
+
+
+/* =========================================================
+   REDUCED MOTION
+   ========================================================= */
+
+@media (prefers-reduced-motion: reduce) {
+    .client-message-btn,
+    .client-chat-btn,
+    .client-messages-panel {
+        transition: none;
+    }
+}

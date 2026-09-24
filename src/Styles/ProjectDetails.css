@@ -1,0 +1,1854 @@
+/* =========================================================
+   SKILLFORGE - CLIENT PROJECT DETAILS
+   Dedicated Professional Styling
+   ========================================================= */
+
+
+/* =========================================================
+   PAGE BASE
+   ========================================================= */
+
+.client-page {
+  min-height: 100%;
+  width: 100%;
+  background: #f5f7fb;
+  color: #172033;
+}
+
+.client-page .client-container {
+  width: 100%;
+  max-width: 1500px;
+  margin: 0 auto;
+  padding: 28px 32px 45px;
+}
+
+
+/* =========================================================
+   BACK BUTTON
+   ========================================================= */
+
+.client-page .client-back-row {
+  margin-bottom: 20px;
+}
+
+.client-page .client-back-btn {
+  display: inline-flex;
+  align-items: center;
+  justify-content: center;
+  gap: 8px;
+  min-height: 42px;
+  padding: 0 16px;
+
+  border: 1px solid #dfe3ec;
+  border-radius: 10px;
+
+  background: #ffffff;
+  color: #344054;
+
+  font-family: inherit;
+  font-size: 13px;
+  font-weight: 700;
+
+  cursor: pointer;
+
+  transition:
+    background 0.2s ease,
+    border-color 0.2s ease,
+    color 0.2s ease,
+    transform 0.2s ease,
+    box-shadow 0.2s ease;
+}
+
+.client-page .client-back-btn:hover {
+  background: #f5f3ff;
+  border-color: #c4b5fd;
+  color: #5b21b6;
+
+  transform: translateX(-2px);
+
+  box-shadow:
+    0 4px 12px rgba(99, 102, 241, 0.08);
+}
+
+.client-page .client-back-btn svg {
+  flex-shrink: 0;
+}
+
+
+/* =========================================================
+   PROJECT HERO
+   ========================================================= */
+
+.client-page .client-project-hero {
+  display: flex;
+  align-items: flex-start;
+  justify-content: space-between;
+  gap: 30px;
+
+  width: 100%;
+  padding: 28px;
+  margin-bottom: 22px;
+
+  border: 1px solid #e3e7ef;
+  border-radius: 18px;
+
+  background:
+    linear-gradient(
+      135deg,
+      #ffffff 0%,
+      #fafaff 100%
+    );
+
+  box-shadow:
+    0 8px 28px rgba(16, 24, 40, 0.06);
+}
+
+.client-page .client-project-hero-content {
+  flex: 1;
+  min-width: 0;
+}
+
+.client-page .client-project-category {
+  display: inline-flex;
+  align-items: center;
+  gap: 7px;
+
+  margin-bottom: 11px;
+  padding: 7px 11px;
+
+  border: 1px solid #ddd6fe;
+  border-radius: 8px;
+
+  background: #f5f3ff;
+  color: #6d28d9;
+
+  font-size: 11px;
+  font-weight: 800;
+
+  text-transform: uppercase;
+  letter-spacing: 0.04em;
+}
+
+.client-page .client-project-category svg {
+  flex-shrink: 0;
+}
+
+.client-page .client-project-hero h1 {
+  margin: 0;
+
+  color: #172033;
+
+  font-size: 29px;
+  line-height: 1.25;
+  font-weight: 800;
+
+  word-break: break-word;
+}
+
+.client-page .client-project-hero-content > p {
+  max-width: 850px;
+
+  margin: 10px 0 20px;
+
+  color: #667085;
+
+  font-size: 14px;
+  line-height: 1.7;
+}
+
+
+/* =========================================================
+   PROJECT META
+   ========================================================= */
+
+.client-page .client-project-meta {
+  display: flex;
+  align-items: center;
+  flex-wrap: wrap;
+  gap: 9px;
+}
+
+.client-page .client-project-meta span {
+  display: inline-flex;
+  align-items: center;
+  gap: 7px;
+
+  min-height: 34px;
+  padding: 8px 11px;
+
+  border: 1px solid #e5e7eb;
+  border-radius: 9px;
+
+  background: #ffffff;
+  color: #475467;
+
+  font-size: 12px;
+  font-weight: 650;
+}
+
+.client-page .client-project-meta span svg {
+  flex-shrink: 0;
+  color: #6366f1;
+}
+
+
+/* =========================================================
+   PROJECT STATUS
+   ========================================================= */
+
+.client-page .client-project-status-box {
+  min-width: 170px;
+  padding: 17px;
+
+  border: 1px solid #e4e7ec;
+  border-radius: 14px;
+
+  background: #ffffff;
+
+  box-shadow:
+    0 4px 15px rgba(16, 24, 40, 0.04);
+}
+
+.client-page .client-status-label {
+  display: block;
+
+  margin-bottom: 9px;
+
+  color: #98a2b3;
+
+  font-size: 10px;
+  font-weight: 800;
+
+  letter-spacing: 0.08em;
+}
+
+.client-page .client-project-status {
+  display: inline-flex;
+  align-items: center;
+  gap: 7px;
+
+  padding: 8px 12px;
+
+  border-radius: 999px;
+
+  font-size: 12px;
+  font-weight: 800;
+}
+
+.client-page .client-project-status svg {
+  flex-shrink: 0;
+}
+
+.client-page .client-project-status.open {
+  background: #dcfce7;
+  color: #15803d;
+}
+
+.client-page .client-project-status.active {
+  background: #dbeafe;
+  color: #2563eb;
+}
+
+.client-page .client-project-status.completed {
+  background: #dcfce7;
+  color: #166534;
+}
+
+.client-page .client-project-status.cancelled,
+.client-page .client-project-status.closed {
+  background: #fee2e2;
+  color: #dc2626;
+}
+
+.client-page .client-project-status.default {
+  background: #f2f4f7;
+  color: #475467;
+}
+
+
+/* =========================================================
+   PAYMENT STATUS MESSAGE
+   ========================================================= */
+
+.client-page .client-payment-message {
+  width: 100%;
+  margin: 0 0 20px;
+  padding: 14px 17px;
+
+  border: 1px solid transparent;
+  border-radius: 12px;
+
+  display: flex;
+  align-items: center;
+  gap: 10px;
+
+  box-sizing: border-box;
+
+  font-size: 14px;
+  font-weight: 600;
+}
+
+.client-page .client-payment-message.success {
+  background: #ecfdf5;
+  color: #047857;
+  border-color: #a7f3d0;
+}
+
+.client-page .client-payment-message.error {
+  background: #fef2f2;
+  color: #b91c1c;
+  border-color: #fecaca;
+}
+
+.client-page .client-payment-message.info {
+  background: #eff6ff;
+  color: #1d4ed8;
+  border-color: #bfdbfe;
+}
+
+.client-page .client-payment-message svg {
+  flex-shrink: 0;
+}
+
+
+/* =========================================================
+   PAYMENT SPINNER
+   ========================================================= */
+
+.payment-spin {
+  animation: paymentSpin 1s linear infinite;
+}
+
+@keyframes paymentSpin {
+  from {
+    transform: rotate(0deg);
+  }
+
+  to {
+    transform: rotate(360deg);
+  }
+}
+
+
+/* =========================================================
+   MAIN CONTENT GRID
+   ========================================================= */
+
+.client-page .client-project-details-grid {
+  display: grid;
+
+  grid-template-columns:
+    minmax(0, 1fr)
+    330px;
+
+  gap: 22px;
+  align-items: start;
+}
+
+.client-page .client-project-main {
+  min-width: 0;
+
+  display: flex;
+  flex-direction: column;
+  gap: 20px;
+}
+
+.client-page .client-project-sidebar {
+  min-width: 0;
+
+  display: flex;
+  flex-direction: column;
+  gap: 17px;
+}
+
+
+/* =========================================================
+   DETAIL CARD
+   ========================================================= */
+
+.client-page .client-detail-card {
+  width: 100%;
+  padding: 22px;
+
+  border: 1px solid #e4e7ec;
+  border-radius: 16px;
+
+  background: #ffffff;
+
+  box-shadow:
+    0 5px 20px rgba(16, 24, 40, 0.045);
+}
+
+.client-page .client-detail-card-header {
+  display: flex;
+  align-items: flex-start;
+  justify-content: space-between;
+  gap: 15px;
+
+  padding-bottom: 16px;
+  margin-bottom: 17px;
+
+  border-bottom: 1px solid #edf0f4;
+}
+
+.client-page .client-detail-card-header > svg {
+  flex-shrink: 0;
+  color: #6366f1;
+}
+
+.client-page .client-section-eyebrow {
+  display: block;
+
+  margin-bottom: 5px;
+
+  color: #6366f1;
+
+  font-size: 10px;
+  font-weight: 850;
+
+  letter-spacing: 0.09em;
+}
+
+.client-page .client-detail-card-header h2 {
+  margin: 0;
+
+  color: #172033;
+
+  font-size: 17px;
+  line-height: 1.35;
+  font-weight: 800;
+}
+
+
+/* =========================================================
+   DESCRIPTION
+   ========================================================= */
+
+.client-page .client-description-content {
+  padding: 16px;
+
+  border: 1px solid #edf0f5;
+  border-radius: 11px;
+
+  background: #fafbfc;
+}
+
+.client-page .client-description-content p {
+  margin: 0;
+
+  color: #667085;
+
+  font-size: 13px;
+  line-height: 1.75;
+}
+
+
+/* =========================================================
+   PROJECT STATS
+   ========================================================= */
+
+.client-page .client-project-stats {
+  display: grid;
+
+  grid-template-columns:
+    repeat(4, minmax(0, 1fr));
+
+  gap: 13px;
+}
+
+.client-page .client-project-stat {
+  display: flex;
+  align-items: center;
+  gap: 11px;
+
+  min-width: 0;
+  padding: 16px;
+
+  border: 1px solid #e4e7ec;
+  border-radius: 14px;
+
+  background: #ffffff;
+
+  box-shadow:
+    0 4px 15px rgba(16, 24, 40, 0.035);
+
+  transition:
+    transform 0.2s ease,
+    box-shadow 0.2s ease;
+}
+
+.client-page .client-project-stat:hover {
+  transform: translateY(-2px);
+
+  box-shadow:
+    0 8px 20px rgba(16, 24, 40, 0.07);
+}
+
+.client-page .client-project-stat-icon {
+  width: 42px;
+  height: 42px;
+
+  flex-shrink: 0;
+
+  display: flex;
+  align-items: center;
+  justify-content: center;
+
+  border-radius: 11px;
+}
+
+.client-page .client-project-stat-icon.purple {
+  background: #f0edff;
+  color: #6d28d9;
+}
+
+.client-page .client-project-stat-icon.blue {
+  background: #eff6ff;
+  color: #2563eb;
+}
+
+.client-page .client-project-stat-icon.green {
+  background: #ecfdf3;
+  color: #16a34a;
+}
+
+.client-page .client-project-stat-icon.orange {
+  background: #fff7ed;
+  color: #ea580c;
+}
+
+.client-page .client-project-stat > div:last-child {
+  min-width: 0;
+}
+
+.client-page .client-project-stat span {
+  display: block;
+
+  margin-bottom: 4px;
+
+  color: #98a2b3;
+
+  font-size: 10px;
+  font-weight: 700;
+}
+
+.client-page .client-project-stat strong {
+  display: block;
+
+  color: #172033;
+
+  font-size: 14px;
+  font-weight: 800;
+
+  word-break: break-word;
+}
+
+
+/* =========================================================
+   REQUIRED SKILLS
+   ========================================================= */
+
+.client-page .client-skills-list {
+  display: flex;
+  align-items: center;
+  flex-wrap: wrap;
+  gap: 8px;
+}
+
+.client-page .client-skill-tag {
+  display: inline-flex;
+  align-items: center;
+
+  padding: 7px 11px;
+
+  border: 1px solid #c7d2fe;
+  border-radius: 8px;
+
+  background: #eef2ff;
+  color: #4f46e5;
+
+  font-size: 11px;
+  font-weight: 750;
+
+  transition:
+    background 0.2s ease,
+    border-color 0.2s ease,
+    transform 0.2s ease;
+}
+
+.client-page .client-skill-tag:hover {
+  background: #e0e7ff;
+  border-color: #a5b4fc;
+
+  transform: translateY(-1px);
+}
+
+.client-page .client-empty-text {
+  color: #98a2b3;
+  font-size: 12px;
+}
+
+
+/* =========================================================
+   PROJECT INFORMATION
+   ========================================================= */
+
+.client-page .client-info-grid {
+  display: grid;
+
+  grid-template-columns:
+    repeat(2, minmax(0, 1fr));
+
+  gap: 11px;
+}
+
+.client-page .client-info-item {
+  min-width: 0;
+  padding: 14px;
+
+  border: 1px solid #eaecf0;
+  border-radius: 11px;
+
+  background: #fafbfc;
+}
+
+.client-page .client-info-item span {
+  display: flex;
+  align-items: center;
+  gap: 6px;
+
+  margin-bottom: 6px;
+
+  color: #98a2b3;
+
+  font-size: 11px;
+}
+
+.client-page .client-info-item span svg {
+  flex-shrink: 0;
+  color: #6366f1;
+}
+
+.client-page .client-info-item strong {
+  display: block;
+
+  color: #344054;
+
+  font-size: 13px;
+  font-weight: 800;
+
+  word-break: break-word;
+}
+
+
+/* =========================================================
+   APPLICATIONS
+   ========================================================= */
+
+.client-page .client-view-all-link {
+  display: inline-flex;
+  align-items: center;
+  gap: 3px;
+
+  color: #4f46e5;
+
+  font-size: 12px;
+  font-weight: 750;
+
+  text-decoration: none;
+
+  transition: color 0.2s ease;
+}
+
+.client-page .client-view-all-link:hover {
+  color: #3730a3;
+}
+
+.client-page .client-application-preview {
+  display: flex;
+  flex-direction: column;
+  gap: 8px;
+}
+
+.client-page .client-application-row {
+  display: flex;
+  align-items: center;
+  gap: 11px;
+
+  padding: 11px;
+
+  border: 1px solid #eaecf0;
+  border-radius: 10px;
+
+  background: #ffffff;
+
+  transition:
+    background 0.2s ease,
+    border-color 0.2s ease,
+    transform 0.2s ease;
+}
+
+.client-page .client-application-row:hover {
+  background: #f8f7ff;
+  border-color: #d8d4fe;
+
+  transform: translateX(2px);
+}
+
+.client-page .client-application-avatar {
+  width: 40px;
+  height: 40px;
+
+  flex-shrink: 0;
+
+  display: flex;
+  align-items: center;
+  justify-content: center;
+
+  overflow: hidden;
+
+  border-radius: 10px;
+
+  background: #eef2ff;
+  color: #6366f1;
+}
+
+.client-page .client-application-avatar img {
+  width: 100%;
+  height: 100%;
+  object-fit: cover;
+}
+
+.client-page .client-application-info {
+  min-width: 0;
+  flex: 1;
+}
+
+.client-page .client-application-info strong {
+  display: block;
+
+  margin-bottom: 3px;
+
+  color: #344054;
+
+  font-size: 12px;
+
+  white-space: nowrap;
+  overflow: hidden;
+  text-overflow: ellipsis;
+}
+
+.client-page .client-application-info span {
+  display: block;
+
+  color: #98a2b3;
+
+  font-size: 10px;
+}
+
+
+/* =========================================================
+   APPLICATION CHAT BUTTON
+   ========================================================= */
+
+.client-page .client-application-chat-btn {
+  display: inline-flex;
+  align-items: center;
+  justify-content: center;
+  gap: 7px;
+
+  min-width: 78px;
+  height: 36px;
+
+  padding: 0 13px;
+
+  border: 1px solid #e0e7ff;
+  border-radius: 10px;
+
+  background: #eef2ff;
+  color: #4f46e5;
+
+  font-family: inherit;
+  font-size: 12px;
+  font-weight: 750;
+
+  cursor: pointer;
+  flex-shrink: 0;
+
+  transition:
+    background 0.2s ease,
+    border-color 0.2s ease,
+    color 0.2s ease,
+    transform 0.2s ease,
+    box-shadow 0.2s ease;
+}
+
+.client-page .client-application-chat-btn:hover {
+  background: #4f46e5;
+  border-color: #4f46e5;
+  color: #ffffff;
+
+  transform: translateY(-1px);
+
+  box-shadow:
+    0 7px 18px rgba(79, 70, 229, 0.22);
+}
+
+.client-page .client-application-chat-btn:active {
+  transform: translateY(0);
+  box-shadow: none;
+}
+
+.client-page .client-application-chat-btn:disabled {
+  opacity: 0.45;
+  cursor: not-allowed;
+
+  transform: none;
+  box-shadow: none;
+}
+
+.client-page .client-application-chat-btn svg {
+  flex-shrink: 0;
+}
+
+
+/* =========================================================
+   APPLICATION ARROW
+   ========================================================= */
+
+.client-page .client-application-row > svg {
+  flex-shrink: 0;
+  color: #98a2b3;
+}
+
+
+/* =========================================================
+   EMPTY STATE
+   ========================================================= */
+
+.client-page .client-empty-state {
+  padding: 36px 20px;
+
+  border: 1px dashed #d8dde8;
+  border-radius: 12px;
+
+  background: #fafbfc;
+
+  text-align: center;
+}
+
+.client-page .client-empty-state > svg {
+  color: #98a2b3;
+}
+
+.client-page .client-empty-state h3 {
+  margin: 9px 0 5px;
+
+  color: #344054;
+
+  font-size: 14px;
+}
+
+.client-page .client-empty-state p {
+  max-width: 350px;
+
+  margin: 0 auto;
+
+  color: #98a2b3;
+
+  font-size: 11px;
+  line-height: 1.6;
+}
+
+
+/* =========================================================
+   SIDEBAR CARD
+   ========================================================= */
+
+.client-page .client-side-card {
+  width: 100%;
+  padding: 19px;
+
+  border: 1px solid #e4e7ec;
+  border-radius: 15px;
+
+  background: #ffffff;
+
+  box-shadow:
+    0 5px 20px rgba(16, 24, 40, 0.045);
+}
+
+.client-page .client-side-card-title {
+  padding-bottom: 12px;
+  margin-bottom: 12px;
+
+  border-bottom: 1px solid #edf0f4;
+}
+
+.client-page .client-side-card-title span {
+  color: #667085;
+
+  font-size: 10px;
+  font-weight: 850;
+
+  letter-spacing: 0.08em;
+}
+
+
+/* =========================================================
+   QUICK ACTIONS
+   ========================================================= */
+
+.client-page .client-quick-actions {
+  display: flex;
+  flex-direction: column;
+  gap: 8px;
+}
+
+.client-page .client-quick-action {
+  width: 100%;
+
+  display: flex;
+  align-items: center;
+  gap: 10px;
+
+  min-height: 58px;
+  padding: 11px;
+
+  border: 1px solid #eaecf0;
+  border-radius: 10px;
+
+  background: #ffffff;
+  color: #344054;
+
+  text-decoration: none;
+
+  cursor: pointer;
+
+  font-family: inherit;
+  text-align: left;
+
+  transition:
+    background 0.2s ease,
+    border-color 0.2s ease,
+    transform 0.2s ease,
+    box-shadow 0.2s ease;
+}
+
+.client-page .client-quick-action:hover {
+  background: #f8f9ff;
+  border-color: #d8d4fe;
+
+  transform: translateX(2px);
+
+  box-shadow:
+    0 4px 12px rgba(99, 102, 241, 0.06);
+}
+
+.client-page .client-quick-action > div:nth-child(2) {
+  flex: 1;
+  min-width: 0;
+}
+
+.client-page .client-quick-action strong {
+  display: block;
+
+  margin-bottom: 3px;
+
+  color: #344054;
+
+  font-size: 11px;
+  font-weight: 800;
+  line-height: 1.35;
+}
+
+.client-page .client-quick-action span {
+  display: block;
+
+  color: #98a2b3;
+
+  font-size: 9px;
+  line-height: 1.4;
+}
+
+.client-page .client-quick-action > svg {
+  flex-shrink: 0;
+  color: #98a2b3;
+}
+
+
+/* =========================================================
+   QUICK ACTION ICONS
+   ========================================================= */
+
+.client-page .client-quick-action-icon {
+  width: 35px;
+  height: 35px;
+
+  flex-shrink: 0;
+
+  display: flex;
+  align-items: center;
+  justify-content: center;
+
+  border-radius: 9px;
+}
+
+.client-page .client-quick-action-icon.purple {
+  background: #f0edff;
+  color: #6d28d9;
+}
+
+.client-page .client-quick-action-icon.blue {
+  background: #eff6ff;
+  color: #2563eb;
+}
+
+.client-page .client-quick-action-icon.green {
+  background: #ecfdf3;
+  color: #16a34a;
+}
+
+.client-page .client-quick-action-icon.orange {
+  background: #fff7ed;
+  color: #ea580c;
+}
+
+
+/* =========================================================
+   AI RECOMMENDED FREELANCERS
+   ========================================================= */
+
+.client-page .client-quick-action.ai-recommendation {
+  border-color: #c4b5fd;
+
+  background:
+    linear-gradient(
+      135deg,
+      #f5f3ff 0%,
+      #faf5ff 100%
+    );
+}
+
+.client-page .client-quick-action.ai-recommendation strong {
+  color: #5b21b6;
+}
+
+.client-page .client-quick-action.ai-recommendation span {
+  color: #7c6aa5;
+}
+
+.client-page .client-ai-icon {
+  background:
+    linear-gradient(
+      135deg,
+      #7c3aed,
+      #6366f1
+    );
+
+  color: #ffffff;
+}
+
+.client-page .client-quick-action.ai-recommendation:hover {
+  background:
+    linear-gradient(
+      135deg,
+      #ede9fe,
+      #f5f3ff
+    );
+
+  border-color: #a78bfa;
+
+  box-shadow:
+    0 7px 18px rgba(124, 58, 237, 0.12);
+}
+
+
+/* =========================================================
+   RAZORPAY PROJECT PAYMENT CARD
+   ========================================================= */
+
+.client-page .client-payment-card {
+  overflow: hidden;
+  position: relative;
+}
+
+
+/* =========================================================
+   PAYMENT CARD TOP ACCENT
+   ========================================================= */
+
+.client-page .client-payment-card::before {
+  content: "";
+
+  display: block;
+
+  width: 100%;
+  height: 3px;
+
+  margin: -19px 0 18px;
+
+  background:
+    linear-gradient(
+      90deg,
+      #4f46e5,
+      #7c3aed,
+      #6366f1
+    );
+}
+
+
+/* =========================================================
+   PAYMENT CARD CONTENT
+   ========================================================= */
+
+.client-page .client-payment-card-content {
+  display: flex;
+  align-items: center;
+  gap: 14px;
+
+  margin-top: 4px;
+  margin-bottom: 18px;
+}
+
+
+/* =========================================================
+   PAYMENT ICON
+   ========================================================= */
+
+.client-page .client-payment-icon {
+  width: 46px;
+  height: 46px;
+
+  flex-shrink: 0;
+
+  display: flex;
+  align-items: center;
+  justify-content: center;
+
+  border-radius: 14px;
+
+  background:
+    linear-gradient(
+      135deg,
+      #eef2ff,
+      #e0e7ff
+    );
+
+  color: #4f46e5;
+
+  box-shadow:
+    0 5px 14px rgba(79, 70, 229, 0.10);
+}
+
+
+/* =========================================================
+   PAYMENT INFO
+   ========================================================= */
+
+.client-page .client-payment-info {
+  display: flex;
+  flex-direction: column;
+  gap: 3px;
+
+  min-width: 0;
+}
+
+.client-page .client-payment-info span {
+  color: #64748b;
+
+  font-size: 11px;
+  font-weight: 650;
+}
+
+.client-page .client-payment-info strong {
+  display: block;
+
+  color: #111827;
+
+  font-size: 23px;
+  line-height: 1.2;
+  font-weight: 850;
+
+  word-break: break-word;
+}
+
+
+/* =========================================================
+   PAY NOW BUTTON
+   ========================================================= */
+
+.client-page .client-pay-now-btn {
+  width: 100%;
+  min-height: 47px;
+
+  padding: 0 15px;
+
+  border: 1px solid #4f46e5;
+  border-radius: 12px;
+
+  background:
+    linear-gradient(
+      135deg,
+      #4f46e5,
+      #6366f1
+    );
+
+  color: #ffffff;
+
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  gap: 8px;
+
+  font-family: inherit;
+  font-size: 13px;
+  font-weight: 800;
+
+  cursor: pointer;
+
+  box-shadow:
+    0 7px 18px rgba(79, 70, 229, 0.18);
+
+  transition:
+    transform 0.2s ease,
+    background 0.2s ease,
+    box-shadow 0.2s ease,
+    opacity 0.2s ease;
+}
+
+.client-page .client-pay-now-btn:hover:not(:disabled) {
+  background:
+    linear-gradient(
+      135deg,
+      #4338ca,
+      #4f46e5
+    );
+
+  transform: translateY(-2px);
+
+  box-shadow:
+    0 10px 23px rgba(79, 70, 229, 0.24);
+}
+
+.client-page .client-pay-now-btn:active:not(:disabled) {
+  transform: translateY(0);
+}
+
+.client-page .client-pay-now-btn:disabled {
+  opacity: 0.6;
+
+  cursor: not-allowed;
+
+  transform: none;
+
+  box-shadow: none;
+}
+
+.client-page .client-pay-now-btn svg {
+  flex-shrink: 0;
+}
+
+
+/* =========================================================
+   PAYMENT COMPLETED
+   ========================================================= */
+
+.client-page .client-payment-completed {
+  width: 100%;
+  min-height: 47px;
+
+  border: 1px solid #a7f3d0;
+  border-radius: 12px;
+
+  background:
+    linear-gradient(
+      135deg,
+      #ecfdf5,
+      #f0fdf4
+    );
+
+  color: #047857;
+
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  gap: 8px;
+
+  font-size: 13px;
+  font-weight: 800;
+
+  box-sizing: border-box;
+}
+
+.client-page .client-payment-completed svg {
+  flex-shrink: 0;
+}
+
+
+/* =========================================================
+   SECURE PAYMENT TEXT
+   ========================================================= */
+
+.client-page .client-payment-secure-text {
+  margin: 12px 0 0;
+
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  gap: 5px;
+
+  color: #64748b;
+
+  font-size: 10px;
+  line-height: 1.4;
+
+  text-align: center;
+}
+
+.client-page .client-payment-secure-text svg {
+  flex-shrink: 0;
+  color: #16a34a;
+}
+
+
+/* =========================================================
+   SECURITY CARD
+   ========================================================= */
+
+.client-page .client-security-card {
+  display: flex;
+  align-items: flex-start;
+  gap: 11px;
+
+  background:
+    linear-gradient(
+      135deg,
+      #f0fdf4 0%,
+      #ffffff 100%
+    );
+
+  border-color: #bbf7d0;
+}
+
+.client-page .client-security-icon {
+  width: 41px;
+  height: 41px;
+
+  flex-shrink: 0;
+
+  display: flex;
+  align-items: center;
+  justify-content: center;
+
+  border-radius: 10px;
+
+  background: #dcfce7;
+  color: #16a34a;
+}
+
+.client-page .client-security-card h3 {
+  margin: 2px 0 5px;
+
+  color: #166534;
+
+  font-size: 14px;
+  font-weight: 800;
+}
+
+.client-page .client-security-card p {
+  margin: 0;
+
+  color: #667085;
+
+  font-size: 10px;
+  line-height: 1.6;
+}
+
+
+/* =========================================================
+   PROJECT OWNER
+   ========================================================= */
+
+.client-page .client-owner {
+  display: flex;
+  align-items: center;
+  gap: 11px;
+}
+
+.client-page .client-owner-avatar {
+  width: 44px;
+  height: 44px;
+
+  flex-shrink: 0;
+
+  display: flex;
+  align-items: center;
+  justify-content: center;
+
+  overflow: hidden;
+
+  border-radius: 11px;
+
+  background:
+    linear-gradient(
+      135deg,
+      #6366f1,
+      #7c3aed
+    );
+
+  color: #ffffff;
+}
+
+.client-page .client-owner-avatar img {
+  width: 100%;
+  height: 100%;
+  object-fit: cover;
+}
+
+.client-page .client-owner-info {
+  min-width: 0;
+}
+
+.client-page .client-owner-info strong {
+  display: block;
+
+  margin-bottom: 3px;
+
+  color: #344054;
+
+  font-size: 12px;
+
+  white-space: nowrap;
+  overflow: hidden;
+  text-overflow: ellipsis;
+}
+
+.client-page .client-owner-info span {
+  color: #98a2b3;
+  font-size: 10px;
+}
+
+
+/* =========================================================
+   PROJECT ACTIONS
+   ========================================================= */
+
+.client-page .client-project-actions {
+  display: flex;
+  flex-direction: column;
+  gap: 8px;
+}
+
+.client-page .client-action-btn {
+  width: 100%;
+  min-height: 40px;
+
+  display: inline-flex;
+  align-items: center;
+  justify-content: center;
+  gap: 7px;
+
+  border-radius: 9px;
+
+  font-family: inherit;
+  font-size: 11px;
+  font-weight: 750;
+
+  cursor: pointer;
+
+  transition:
+    background 0.2s ease,
+    border-color 0.2s ease,
+    transform 0.2s ease;
+}
+
+.client-page .client-action-btn:hover {
+  transform: translateY(-1px);
+}
+
+.client-page .client-action-btn.edit {
+  border: 1px solid #c7d2fe;
+  background: #eef2ff;
+  color: #4f46e5;
+}
+
+.client-page .client-action-btn.edit:hover {
+  background: #e0e7ff;
+  border-color: #a5b4fc;
+}
+
+.client-page .client-action-btn.delete {
+  border: 1px solid #fecaca;
+  background: #fff1f2;
+  color: #dc2626;
+}
+
+.client-page .client-action-btn.delete:hover {
+  background: #fee2e2;
+  border-color: #fca5a5;
+}
+
+.client-page .client-action-btn:disabled {
+  opacity: 0.6;
+
+  cursor: not-allowed;
+
+  transform: none;
+}
+
+
+/* =========================================================
+   LOADING
+   ========================================================= */
+
+.client-page .client-loading-state {
+  min-height: 65vh;
+
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: center;
+
+  gap: 13px;
+}
+
+.client-page .client-loading-spinner {
+  width: 38px;
+  height: 38px;
+
+  border: 3px solid #e0e7ff;
+  border-top-color: #6366f1;
+
+  border-radius: 50%;
+
+  animation:
+    projectLoadingSpin 0.8s linear infinite;
+}
+
+.client-page .client-loading-state p {
+  margin: 0;
+
+  color: #667085;
+
+  font-size: 13px;
+}
+
+@keyframes projectLoadingSpin {
+  to {
+    transform: rotate(360deg);
+  }
+}
+
+
+/* =========================================================
+   ERROR CARD
+   ========================================================= */
+
+.client-page .client-error-card {
+  max-width: 500px;
+
+  margin: 70px auto;
+  padding: 35px;
+
+  border: 1px solid #e4e7ec;
+  border-radius: 17px;
+
+  background: #ffffff;
+
+  text-align: center;
+
+  box-shadow:
+    0 10px 30px rgba(16, 24, 40, 0.07);
+}
+
+.client-page .client-error-icon {
+  width: 58px;
+  height: 58px;
+
+  display: flex;
+  align-items: center;
+  justify-content: center;
+
+  margin: 0 auto 15px;
+
+  border-radius: 15px;
+
+  background: #fef2f2;
+  color: #dc2626;
+}
+
+.client-page .client-error-card h2 {
+  margin: 0 0 8px;
+
+  color: #172033;
+
+  font-size: 18px;
+  line-height: 1.4;
+}
+
+.client-page .client-error-card p {
+  margin: 0 0 20px;
+
+  color: #667085;
+
+  font-size: 13px;
+  line-height: 1.6;
+}
+
+.client-page .client-primary-btn {
+  display: inline-flex;
+  align-items: center;
+  justify-content: center;
+  gap: 7px;
+
+  min-height: 42px;
+  padding: 0 17px;
+
+  border: 1px solid #4f46e5;
+  border-radius: 10px;
+
+  background: #4f46e5;
+  color: #ffffff;
+
+  font-family: inherit;
+  font-size: 12px;
+  font-weight: 750;
+
+  cursor: pointer;
+
+  transition:
+    background 0.2s ease,
+    transform 0.2s ease;
+}
+
+.client-page .client-primary-btn:hover {
+  background: #4338ca;
+  transform: translateY(-1px);
+}
+
+
+/* =========================================================
+   RESPONSIVE - TABLET
+   ========================================================= */
+
+@media (max-width: 1200px) {
+  .client-page .client-project-details-grid {
+    grid-template-columns:
+      minmax(0, 1fr)
+      300px;
+  }
+
+  .client-page .client-project-stats {
+    grid-template-columns:
+      repeat(2, minmax(0, 1fr));
+  }
+}
+
+
+/* =========================================================
+   RESPONSIVE - SMALL TABLET
+   ========================================================= */
+
+@media (max-width: 950px) {
+  .client-page .client-project-hero {
+    flex-direction: column;
+  }
+
+  .client-page .client-project-status-box {
+    width: 100%;
+    min-width: 0;
+  }
+
+  .client-page .client-project-details-grid {
+    grid-template-columns: 1fr;
+  }
+
+  .client-page .client-project-sidebar {
+    display: grid;
+
+    grid-template-columns:
+      repeat(2, minmax(0, 1fr));
+
+    align-items: start;
+  }
+}
+
+
+/* =========================================================
+   RESPONSIVE - MOBILE
+   ========================================================= */
+
+@media (max-width: 700px) {
+  .client-page .client-container {
+    padding: 20px 16px 35px;
+  }
+
+  .client-page .client-project-hero {
+    padding: 21px;
+    border-radius: 15px;
+  }
+
+  .client-page .client-project-hero h1 {
+    font-size: 23px;
+  }
+
+  .client-page .client-project-hero-content > p {
+    font-size: 13px;
+  }
+
+  .client-page .client-project-meta {
+    flex-direction: column;
+    align-items: stretch;
+  }
+
+  .client-page .client-project-meta span {
+    width: 100%;
+  }
+
+  .client-page .client-project-stats {
+    grid-template-columns: 1fr;
+  }
+
+  .client-page .client-project-sidebar {
+    grid-template-columns: 1fr;
+  }
+
+  .client-page .client-detail-card {
+    padding: 18px;
+  }
+
+  .client-page .client-info-grid {
+    grid-template-columns: 1fr;
+  }
+
+  /* APPLICATION CHAT MOBILE */
+
+  .client-page .client-application-row {
+    align-items: center;
+  }
+
+  .client-page .client-application-chat-btn {
+    min-width: 72px;
+    height: 34px;
+    padding: 0 10px;
+    font-size: 11px;
+  }
+
+  /* PAYMENT MOBILE */
+
+  .client-page .client-payment-card-content {
+    margin-bottom: 16px;
+  }
+
+  .client-page .client-payment-info strong {
+    font-size: 21px;
+  }
+
+  .client-page .client-pay-now-btn {
+    min-height: 48px;
+  }
+
+  .client-page .client-payment-message {
+    padding: 13px 14px;
+    font-size: 13px;
+  }
+}
+
+
+/* =========================================================
+   RESPONSIVE - SMALL MOBILE
+   ========================================================= */
+
+@media (max-width: 450px) {
+  .client-page .client-container {
+    padding: 14px 11px 30px;
+  }
+
+  .client-page .client-back-btn {
+    width: 100%;
+  }
+
+  .client-page .client-project-hero {
+    padding: 17px;
+  }
+
+  .client-page .client-project-hero h1 {
+    font-size: 20px;
+  }
+
+  .client-page .client-detail-card {
+    padding: 15px;
+    border-radius: 13px;
+  }
+
+  .client-page .client-detail-card-header h2 {
+    font-size: 15px;
+  }
+
+  .client-page .client-project-stat {
+    padding: 13px;
+  }
+
+  .client-page .client-side-card {
+    padding: 15px;
+  }
+
+  /* CHAT BUTTON SMALL MOBILE */
+
+  .client-page .client-application-row {
+    gap: 9px;
+  }
+
+  .client-page .client-application-avatar {
+    width: 36px;
+    height: 36px;
+  }
+
+  .client-page .client-application-info strong {
+    font-size: 11px;
+  }
+
+  .client-page .client-application-info span {
+    font-size: 9px;
+  }
+
+  .client-page .client-application-chat-btn {
+    min-width: 66px;
+    height: 32px;
+    padding: 0 8px;
+    gap: 5px;
+    font-size: 10px;
+  }
+
+  .client-page .client-application-chat-btn svg {
+    width: 14px;
+    height: 14px;
+  }
+
+  /* PAYMENT SMALL MOBILE */
+
+  .client-page .client-payment-card::before {
+    margin-top: -15px;
+    margin-bottom: 15px;
+  }
+
+  .client-page .client-payment-icon {
+    width: 42px;
+    height: 42px;
+    border-radius: 12px;
+  }
+
+  .client-page .client-payment-info strong {
+    font-size: 20px;
+  }
+
+  .client-page .client-pay-now-btn {
+    min-height: 46px;
+    font-size: 12px;
+  }
+
+  .client-page .client-payment-secure-text {
+    font-size: 9px;
+  }
+}
