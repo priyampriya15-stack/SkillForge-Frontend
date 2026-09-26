@@ -19,7 +19,7 @@ import {
 } from "react-icons/fa";
 
 import FreelancerStatCard from "../../Components/freelancer/freelancerStatCard";
-import ProjectCard from "../../Components/freelancer/ProjectCard";
+import ProjectCard from "../../components/freelancer/ProjectCard";
 
 import { getProjects } from "../../Services/projectService";
 import { getMyApplications } from "../../Services/applicationService";

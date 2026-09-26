@@ -11,7 +11,7 @@ import {
 
 import { getProjects } from "../../Services/projectService";
 
-import ProjectCard from "../../Components/freelancer/ProjectCard";
+import ProjectCard from "../../components/freelancer/ProjectCard";
 
 const BrowseProjects = () => {
   // ==========================================
