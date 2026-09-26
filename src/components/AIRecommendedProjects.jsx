@@ -14,7 +14,7 @@ import {
     Code2,
 } from "lucide-react";
 
-import "../styles/AIRecommendedProjects.css";
+import "../Styles/AIRecommendedProjects.css";
 
 
 // =============================================================

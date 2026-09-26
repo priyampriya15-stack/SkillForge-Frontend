@@ -10,8 +10,8 @@ import {
   FaTriangleExclamation,
 } from "react-icons/fa6";
 
-import ApplicationCard from "../../Components/freelancer/ApplicationCard";
-import { getMyApplications } from "../../Services/freelancerService";
+import ApplicationCard from "../../components/freelancer/ApplicationCard";
+import { getMyApplications } from "../../Services/freelancerServices";
 
 const MyApplication = () => {
   const navigate = useNavigate();
