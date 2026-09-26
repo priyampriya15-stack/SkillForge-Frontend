@@ -18,7 +18,7 @@ import {
   FaHourglassHalf,
 } from "react-icons/fa";
 
-import FreelancerStatCard from "../../Components/freelancer/freelancerStatCard";
+import FreelancerStatCard from "../../components/freelancer/FreelancerStatCard";
 import ProjectCard from "../../components/freelancer/ProjectCard";
 
 import { getProjects } from "../../Services/projectService";
